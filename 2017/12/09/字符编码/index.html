@@ -5,16 +5,16 @@
   
   <title>morgana</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="layout: 文件操作title: 字符编码date: 2017-12-09 23:43:03 tags:unicode encode 保存文件 –》硬盘utf8 二进制 —&amp;gt;decode读取文件—&amp;gt;内存unicode python3 默认文件编码是utf8 默认字符串编码是unicode">
+  <meta name="description" content="layout: 文件操作title: 字符编码date: 2017-12-09 23:43:03tags: –unicode encode 保存文件 –》硬盘utf8 二进制 —&amp;gt;decode读取文件—&amp;gt;内存unicode python3 默认文件编码是utf8 默认字符串编码是unicod">
 <meta property="og:type" content="article">
 <meta property="og:title" content="morgana">
 <meta property="og:url" content=":https://vipmorgana.github.io/2017/12/09/字符编码/index.html">
 <meta property="og:site_name" content="morgana">
-<meta property="og:description" content="layout: 文件操作title: 字符编码date: 2017-12-09 23:43:03 tags:unicode encode 保存文件 –》硬盘utf8 二进制 —&amp;gt;decode读取文件—&amp;gt;内存unicode python3 默认文件编码是utf8 默认字符串编码是unicode1.程序执行前，程序代码先加载到内存中，所占的内存为unicode编码的二进制12345678">
-<meta property="og:updated_time" content="2017-12-09T15:56:26.000Z">
+<meta property="og:description" content="layout: 文件操作title: 字符编码date: 2017-12-09 23:43:03tags: –unicode encode 保存文件 –》硬盘utf8 二进制 —&amp;gt;decode读取文件—&amp;gt;内存unicode python3 默认文件编码是utf8 默认字符串编码是unicode1.程序执行前，程序代码先加载到内存中，所占的内存为unicode编码的二进制1234567">
+<meta property="og:updated_time" content="2017-12-09T15:58:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="morgana">
-<meta name="twitter:description" content="layout: 文件操作title: 字符编码date: 2017-12-09 23:43:03 tags:unicode encode 保存文件 –》硬盘utf8 二进制 —&amp;gt;decode读取文件—&amp;gt;内存unicode python3 默认文件编码是utf8 默认字符串编码是unicode1.程序执行前，程序代码先加载到内存中，所占的内存为unicode编码的二进制12345678">
+<meta name="twitter:description" content="layout: 文件操作title: 字符编码date: 2017-12-09 23:43:03tags: –unicode encode 保存文件 –》硬盘utf8 二进制 —&amp;gt;decode读取文件—&amp;gt;内存unicode python3 默认文件编码是utf8 默认字符串编码是unicode1.程序执行前，程序代码先加载到内存中，所占的内存为unicode编码的二进制1234567">
   
     <link rel="alternate" href="/atom.xml" title="morgana" type="application/atom+xml">
   
@@ -66,7 +66,7 @@
         <section id="main"><article id="post-字符编码" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/12/09/字符编码/" class="article-date">
-  <time datetime="2017-12-09T15:56:26.000Z" itemprop="datePublished">2017-12-09</time>
+  <time datetime="2017-12-09T15:58:06.000Z" itemprop="datePublished">2017-12-09</time>
 </a>
     
   </div>
@@ -76,8 +76,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>layout: 文件操作<br>title: 字符编码<br>date: 2017-12-09 23:43:03</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>unicode encode 保存文件 –》硬盘utf8 二进制 —&gt;decode读取文件—&gt;内存unicode</p>
+<p>layout: 文件操作<br>title: 字符编码<br>date: 2017-12-09 23:43:03<br>tags:</p>
+<p>–<br>unicode encode 保存文件 –》硬盘utf8 二进制 —&gt;decode读取文件—&gt;内存unicode</p>
 <p>python3 默认文件编码是utf8 默认字符串编码是unicode<br>1.程序执行前，程序代码先加载到内存中，所占的内存为unicode编码的二进制<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="string">'morgana'</span>程序执行时，临时申请的内存空间unicode编码的二进制</span><br><span class="line">y=<span class="string">'morgana'</span>.encode(<span class="string">'utf8'</span>) 程序执行时 临时申请的内存空间utf8编码的二进制</span><br><span class="line"> </span><br><span class="line">python2 默认ASCii码</span><br><span class="line">x=<span class="string">'盖'</span></span><br><span class="line">print(x)</span><br><span class="line"> </span><br><span class="line">y=<span class="string">'盖'</span>.encode(<span class="string">'utf-8'</span>) <span class="comment">#保存文件</span></span><br><span class="line">print(y)</span><br><span class="line">py2:unicode--&gt;encode(编码后)--&gt;bytes=str </span><br><span class="line">py3:unicode</span><br><span class="line">windows cmd 默认 gbk</span><br></pre></td></tr></table></figure>  </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">f.seek(<span class="number">3</span>) <span class="comment">#字节</span></span><br><span class="line">f.seek(<span class="number">3</span>,<span class="number">0</span>)<span class="comment">#0 按照文件开头 1代表文件当前位置 2文件末尾位置</span></span><br><span class="line">f.tell() <span class="comment">#告诉你当前光标的位置</span></span><br><span class="line">f.truncate() <span class="comment">#截断 后面的都不要 写操作</span></span><br><span class="line">f.readlines() <span class="comment">#读成一个列表</span></span><br></pre></td></tr></table></figure>  
 <p>#1.依赖于索引 把大文件直接读到内存 不合理<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(l))</span><br><span class="line">  print(l[i])</span><br></pre></td></tr></table></figure>  </p>
